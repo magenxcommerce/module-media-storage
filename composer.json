@@ -1,0 +1,36 @@
+{
+    "name": "magenxcommerce/module-media-storage",
+    "description": "N/A",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "version": "100.4.1",
+    "require": {
+        "php": "~7.3.0||~7.4.0",
+        "magenxcommerce/framework": "103.0.*",
+        "magenxcommerce/framework-bulk": "101.0.*",
+        "magenxcommerce/module-backend": "102.0.*",
+        "magenxcommerce/module-config": "101.2.*",
+        "magenxcommerce/module-store": "101.1.*",
+        "magenxcommerce/module-catalog": "104.0.*",
+        "magenxcommerce/module-theme": "101.1.*",
+        "magenxcommerce/module-asynchronous-operations": "100.4.*",
+        "magenxcommerce/module-authorization": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\MediaStorage\\": ""
+        }
+    },
+    "replace": {
+        "magento/module-media-storage": "*"
+    }
+}
